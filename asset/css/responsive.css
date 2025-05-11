@@ -1,0 +1,95 @@
+/* ==================== MEDIA QUERIES ==================== */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 830px) {
+    #content .content-section, #footer .content-footer {
+        max-width: 100%;
+        padding: 64px 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+    #header {
+        overflow: hidden;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background: #333;
+    }
+
+    #nav .subnav a {
+        color: white;
+        padding: 5px 40px;
+
+    }
+
+    .search-btn{
+        display: none;
+    }
+    #header #nav{
+        display: block;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #content .content-section, #footer .content-footer {
+        max-width: 100%;
+        padding: 64px 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content .member-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .member-list .member-item{
+        float: none;
+        width: 100%;
+    }
+
+    .member-item img {
+        margin-top: 15px;
+        width: 60%;
+        border-radius: 8px;
+    }
+
+    .places-tickets{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .places-tickets .item{
+        width: 100%;
+    }
+
+    .content-footer .main-content-footer{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-footer {
+        text-align: right;
+        width: 100%;
+    }
+
+}
